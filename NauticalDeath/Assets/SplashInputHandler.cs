@@ -3,6 +3,12 @@ using UnityEngine;
 
 public class SplashInputHandler : MonoBehaviour
 {
+
+	void Awake()
+	{
+		DontDestroyOnLoad(this);
+	}
+
     // Start is called before the first frame update
     void Start()
     {
@@ -11,7 +17,6 @@ public class SplashInputHandler : MonoBehaviour
 
 	void LoadLevel()
 	{
-		DontDestroyOnLoad(this);
 		SceneManager.LoadScene(1);
 	}
 
