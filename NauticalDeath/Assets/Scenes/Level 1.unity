@@ -271,27 +271,27 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.5
+      value: 7.42
       objectReference: {fileID: 0}
     - target: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97, type: 2}
       propertyPath: m_LocalRotation.w
@@ -309,23 +309,6 @@ Transform:
   m_PrefabParentObject: {fileID: 4723202276545046, guid: 75110d908fb962f42981954e770ded97,
     type: 2}
   m_PrefabInternal: {fileID: 641434102}
---- !u!1 &641434104 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1821433993895610, guid: 75110d908fb962f42981954e770ded97,
-    type: 2}
-  m_PrefabInternal: {fileID: 641434102}
---- !u!114 &641434105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 641434104}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ddfdd10543b7960489a6c8b1ffe3dfac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  xSpeed: 4
 --- !u!1 &804266441
 GameObject:
   m_ObjectHideFlags: 0
