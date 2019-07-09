@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityStandardAssets.CrossPlatformInput;
 
-public class Player : MonoBehaviour {
+public class PlayerController : MonoBehaviour {
 
 	[Tooltip("In m/s")][SerializeField] float xSpeed = 10f;
 	[Tooltip("In m/s")][SerializeField] float ySpeed = 8f;
@@ -17,17 +14,19 @@ public class Player : MonoBehaviour {
 	[SerializeField] float controlYawFactor = -20f;
 
 	float xThrow, yThrow;
+	bool isDead = false;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
 	void Update ()
 	{
+		if (isDead) return;
 		ProcessPosition();
 		ProcessRotation();
+	}
+
+	public void DisableControls()
+	{
+		isDead = true;
 	}
 
 	private void ProcessRotation()
