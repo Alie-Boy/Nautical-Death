@@ -2,15 +2,17 @@
 
 public class MusicPlayer : MonoBehaviour
 {
-
 	void Awake()
 	{
-		DontDestroyOnLoad(this);
+		int numOfMusicPlayers = FindObjectsOfType<MusicPlayer>().Length;
+		if (numOfMusicPlayers > 1)
+		{
+			Destroy(gameObject);
+		}
+		else
+		{
+			DontDestroyOnLoad(gameObject);
+		}
 	}
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	
 }
