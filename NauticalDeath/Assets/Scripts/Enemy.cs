@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy : MonoBehaviour {
+
+	[SerializeField] GameObject deathFX;
 
 	void Start()
 	{
@@ -19,6 +18,8 @@ public class Enemy : MonoBehaviour {
 
 	void OnParticleCollision(GameObject other)
 	{
+		GameObject clone = Instantiate(deathFX, transform.position, Quaternion.identity);
+		Destroy(clone, 2f);
 		Destroy(gameObject);
 	}
 }
